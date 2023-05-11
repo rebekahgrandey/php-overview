@@ -84,7 +84,23 @@
         echo "Roses are $color <br>";
         echo "$pluralNoun are blue <br>";
         echo "I love $celebrity <br>";
+        
+        // GET
 
+        // http://localhost:4000/site.php?name=John&age=70
+
+        echo $_GET["age"]; 
+        ?>
+
+        <!--don't use GET for sensitive info (shows in URL). use POST-->
+        <form action="site.php" method="post">
+            Password: <input type="password" name="password"> <br>
+            <input type="submit">
+        </form>
+        <br>
+
+        <?php
+            echo $_POST["password"];
         ?>
 
     </body>

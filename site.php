@@ -101,7 +101,15 @@
 
         <?php
             echo $_POST["password"];
+
+            // Arrays
+            $friends = array("Kevin", "Karen", "Oscar", "Jim");
+            $friends[4] = "Phyllis";
+            $friends[0] = "Bobby";
+            echo $friends[0];  
+            echo count($friends);
         ?>
+
 
     </body>
 </html>

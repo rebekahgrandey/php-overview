@@ -39,10 +39,21 @@
             echo floor(3.3);
             echo ceil(3.3);
 
+            //user input
+            
+
 
 
 
         ?>
-
+        <form action="site.php" method="get">
+            Name: <input type="text" name="username">
+            <br>
+            Age: <input type="text" name="age">
+            <input type="submit">
+        </form>
+        <br>
+        Your name is <?php echo $_GET["username"] ?>
+        Your age is <?php echo $_GET["age"] ?>
     </body>
 </html>

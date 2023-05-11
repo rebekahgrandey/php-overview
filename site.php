@@ -30,6 +30,18 @@
             echo str_replace("Bye", "Hi", $closingString);
 
 
+            //numbers
+            $num = 10;
+            $num++;
+            echo $num;
+            echo abs(-100);
+            echo max(2, 10);
+            echo floor(3.3);
+            echo ceil(3.3);
+
+
+
+
         ?>
 
     </body>

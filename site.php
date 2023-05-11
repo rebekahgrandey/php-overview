@@ -38,14 +38,9 @@
             echo max(2, 10);
             echo floor(3.3);
             echo ceil(3.3);
-
-            //user input
-            
-
-
-
-
         ?>
+
+
         <form action="site.php" method="get">
             Name: <input type="text" name="username">
             <br>
@@ -55,5 +50,20 @@
         <br>
         Your name is <?php echo $_GET["username"] ?>
         Your age is <?php echo $_GET["age"] ?>
+
+        <form action="site.php" method="get">
+            <input type="number" name="num1">
+            <br>
+            <input type="number" name="num2">
+            <br>
+            <input type="submit">
+        </form>
+
+        Answer: <?php echo $_GET["num1"] + $_GET["num2"] ?>
+
+        <!-- http://localhost:4000/site.php?num1=4&num2=5 
+        ^ Can manipulate variables with URL -->
+
     </body>
 </html>
+

@@ -110,6 +110,36 @@
             echo count($friends);
         ?>
 
+<form action="site.php" method="post">
+            Which fruits do you like?
+            <br>
+            Apples: <input type="checkbox" name="fruits[]" value="apples">
+            Oranges: <input type="checkbox" name="fruits[]" value="oranges">
+            Pears: <input type="checkbox" name="fruits[]" value="pears">
+            <br>
+            <input type="submit">
+        </form>
+
+        <?php
+            $fruits = $_POST["fruits"];
+            echo $fruits[0];
+        ?>
+
+
+        
+        <form action="site.php" method="post">
+            <input type="text" name="student"> <br>
+            <input type="submit">
+        </form>
+
+        <?php
+        
+        // Associative arrays (stores both a key and a value)
+            $grades = array("Jim"=>"A+", "Pam"=>"B-", "Oscar"=>"C");
+            echo $grades[$_POST["student"]];
+            
+        ?>
+
 
     </body>
 </html>

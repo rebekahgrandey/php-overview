@@ -154,9 +154,9 @@
         <?php
             //classes, objects, and constructors
             class Book {
-                var $title;
-                var $author;
-                var $pages;
+                public $author;
+                public $title;
+                public $pages;
 
                 function __construct($name, $aTitle, $aAuthor, $aPages){
                     $this->title = $aTitle;
@@ -184,7 +184,7 @@
              //* constructor allowed for quicker instantiation (below) vs above
 
              $book1 = new Book("Norwegian Wood", "Haruki Murakami", 296);
-             
+
              $book2 = new Book("Lord of the Rings", "Tolkien", 700);
 
 
